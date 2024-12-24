@@ -1,0 +1,100 @@
+@media (max-width:1200px) {
+    .custom__cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width:992px) {
+    .nav__form input {
+        position: absolute;
+        height: 100%;
+        left: 0;
+        top: 0;
+        max-width: 0%;
+        opacity: 0;
+        transition: .5s;
+    }
+
+    .nav__form:hover input {
+        max-width: 100%;
+        opacity: 1;
+    }
+
+    .nav__form button {
+        width: 28px;
+        height: 28px;
+    }
+
+    .header__title {
+        font-size: 40px;
+    }
+
+    .commerce__content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width:768px) {
+    .header__title {
+        font-size: 30px;
+    }
+
+    .header__content {
+        min-height: 550px;
+    }
+
+    .nav__list {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        flex-direction: column;
+        background: white;
+        padding: 10px 16px;
+        transform: scaleY(0);
+        opacity: 0;
+        transition: all .5s;
+        transform-origin: top;
+        z-index: 10;
+    }
+
+    .nav__content {
+        justify-content: start;
+    }
+
+    .nav__form {
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    input[type="checkbox"]:checked~ul {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    .nav__menu-btn {
+        display: flex;
+    }
+
+    .nav__menu-btn {
+        order: 1;
+    }
+}
+
+@media (max-width:576px) {
+    .commerce__card {
+        min-width: 255px;
+    }
+
+    .commerce__content {
+        flex-wrap: nowrap;
+        justify-content: start;
+        overflow-x: scroll;
+
+    }
+
+    .commerce__title {
+        font-size: 30px;
+    }
+}
